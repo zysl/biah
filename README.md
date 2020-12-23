@@ -1,2 +1,7 @@
-# biah
-玄古biah
+初始化项目
+npm install
+or 
+cnpm install
+
+运行项目
+$ cnpm start
