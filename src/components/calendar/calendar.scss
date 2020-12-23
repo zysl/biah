@@ -1,0 +1,93 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    .table_calendar {
+        margin-top: 17px;
+        width: 600px;
+        .ant-table-thead > tr > th.table_blue {
+            background: #DDF0F5;
+            height: 50px;
+            
+        }
+        
+        .ant-table-column-title {
+            font-size: 15px;
+            color: #222;
+            font-weight: 400;
+        }
+    }
+
+    .ant-table-tbody {
+        .hname {
+            position: relative;
+        }
+        .hname em{
+            position: absolute;
+            display: flex;
+            left: 50%;
+            margin-left: -3px;
+        }
+        tr {
+            td {
+                &:first-child{
+                    border-left: 1px solid #e8e8e8;
+                }
+        
+                &:last-child {
+                    border-right: 1px solid #e8e8e8;
+                }
+            }
+            
+        }
+    }
+
+    em {
+        display: inline-block;
+        width:6px;
+        height:6px;
+        background:rgba(252,84,97,1);
+        border-radius:50%;
+
+        &.ing {
+            background: #71D875;
+        }
+
+        &.success {
+            background: #4C8AFE;
+        }
+    }
+
+    
+    .ull {
+        margin-top: 80px;
+        .ul_li {
+            margin-top: 22px;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+            span {
+                display:inline-block;
+                margin-left: 9px;
+                font-size:15px;
+                font-family:'Microsoft YaHei';
+                font-weight:400;
+                color:rgba(252,84,97,1);
+
+                &.ing {
+                    color: #71D875;
+                }
+
+                &.success {
+                    color: #4C8AFE;
+                }
+            }
+        }
+    }
+}
+
+
+

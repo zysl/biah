@@ -1,0 +1,145 @@
+@import '../node_modules/antd/dist/antd.css';  /* 引入antd样式 */
+
+/* 书写一些其他的公共样式 */
+.ant-layout {
+  position: relative;
+  height: 100vh;
+}
+
+/* 头部 */
+.ant-layout-header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+}
+
+.ant-layout-header .ant-dropdown-link {
+  padding-right: 20px;
+}
+
+.ant-layout-header .custom-img {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f0f0f0;
+}
+
+/* 内容部分 */
+.layout-content {
+  overflow: auto;
+  border-radius: 4px;
+  min-width: 900px;
+}
+
+.layout-content {
+  padding: 15px;
+}
+
+.content-wrap {
+  padding: 15px;
+  background: #fff;
+}
+
+.content-wrap:hover {
+  box-shadow: 0 0 5px #ccc;
+}
+
+/* 侧边栏公共样式修改 */
+.ant-layout-sider {
+  background-color: #ffffff;
+}
+
+.ant-layout-sider .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  color: #169CBE;
+  background-color: #169CBE;
+}
+
+.ant-layout-sider .logo-img {
+  width: 187px;
+  height: 40px;
+}
+
+.ant-layout-sider  .name {
+  padding-left: 10px;
+}
+
+.ant-layout-sider .ant-menu-item {
+  margin-top: 0;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color:#E7F5F8 !important;
+}
+
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover,.ant-menu-submenu-selected {
+  color: #169CBE !important;
+}
+
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+  color: #169CBE !important;
+}
+
+.ant-menu-item > a:hover {
+  color: #169CBE !important;
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid #169CBE;
+  border-right: 0;
+  height: 20px;
+  width: 0;
+  background:#169CBE;
+  box-shadow:1px 0px 7px 0px rgba(22,156,190,0.7);
+}
+
+.ant-menu-vertical > .ant-menu-item, .ant-menu-vertical-left > .ant-menu-item, .ant-menu-vertical-right > .ant-menu-item, .ant-menu-inline > .ant-menu-item, .ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title, .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: 60px;
+  line-height: 60px;
+}
+
+.ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title {
+  margin-bottom: 0;
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child), .ant-menu-vertical-left .ant-menu-item:not(:last-child), .ant-menu-vertical-right .ant-menu-item:not(:last-child), .ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border-right: 0;
+}
+
+.layout-content {
+  padding-top: 55px;
+}
+
+.headBg {
+  width: 100%;
+  height:100%;
+  background-color: #169CBE;
+}
+
+.ant-menu-item > a {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ant-menu .sider_icon {
+  margin-right: 14px;
+  display: inline-block;
+  width: 18px;
+  margin-bottom: 2px;
+  // height: 20px;
+}
