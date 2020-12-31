@@ -17,7 +17,7 @@ class Index extends React.Component {
   render() {
     const mainPage = (
       <Layout>
-        <SiderBar></SiderBar>
+        {/*<SiderBar></SiderBar>*/}
         <Layout>
           <HeaderBar>
             <Switch>
