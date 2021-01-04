@@ -1,9 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { NavLink } from 'react-router-dom'
-import { Menu, Icon, Layout } from 'antd';
-import menuConfig from '../../config/menuConfig';
 import { connect } from 'react-redux';
-import { switchMenu } from '../../redux/action';
 import './SecondNav.scss';
 
 import imgRefresh from '../../images/refresh.svg'

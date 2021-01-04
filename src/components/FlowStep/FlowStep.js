@@ -21,37 +21,34 @@ class FlowStep extends React.Component {
     }
 
     render() {
-        const { tabList } = this.props;
+        const { stepList, current } = this.props;
         return (
             <div className="flow-step-wrapper">
-                <div className={'step-item'}>
-                    <div className={'step-item-title'}>
-                        <div className={'title'}>张三</div>
-                        <div className={'desc'}>张三</div>
-                    </div>
-                    <div className={'step-item-tail'}>
-                        <div className={'step-dot'}/>
-                        <div className={'step-line'}/>
-                    </div>
-                    <div className={'step-item-extra-content'}>
-                        <div className={'time'}>2019-02-12</div>
-                        <div className={'desc'}>审批通过</div>
-                    </div>
-                </div>
-                <div className={'step-item'}>
-                    <div className={'step-item-title'}>
-                        <div className={'title'}>张三</div>
-                        <div className={'desc'}>张三</div>
-                    </div>
-                    <div className={'step-item-tail'}>
-                        <div className={'step-dot'}/>
-                        <div className={'step-line'}/>
-                    </div>
-                    <div className={'step-item-extra-content'}>
-                        <div className={'time'}>2019-02-12</div>
-                        <div className={'desc'}>审批通过</div>
-                    </div>
-                </div>
+                {
+                    stepList && stepList.length > 0 && stepList.map((item, idx) => (
+                        <div className={'step-item'}>
+                            <div className={'step-item-title'}>
+                                <div className={'title'}>{item.title}</div>
+                                <div className={'desc'}>{item.desc}</div>
+                            </div>
+                            <div className={'step-item-tail'}>
+                                <div className={'step-dot'} style={ idx <= current ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
+                                {
+                                    (idx + 1) < stepList.length &&
+                                    <div className={'step-line'} style={ idx <= current - 1 ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
+                                }
+                            </div>
+                            <div className={'step-item-extra-content'}>
+                                {
+                                    item.time && <div className={'time'}>{item.time}</div>
+                                }
+                                {
+                                    item.extraContent && <div className={'extra-content'}>{item.extraContent}</div>
+                                }
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         );
     }
