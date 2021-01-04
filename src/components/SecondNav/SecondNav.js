@@ -1,17 +1,6 @@
 import React, { lazy, Suspense } from 'react';
-import { NavLink } from 'react-router-dom'
-import { Menu, Icon, Layout } from 'antd';
-import menuConfig from '../../config/menuConfig';
 import { connect } from 'react-redux';
-import { switchMenu } from '../../redux/action';
 import './SecondNav.scss';
-
-import logoURL from '../../images/logo.jpg';
-import imgRefresh from '../../images/refresh.svg'
-
-const { Sider } = Layout;
-const { SubMenu } = Menu;
-const { Header } = Layout;
 
 class SecondNav extends React.Component {
     constructor(props) {
