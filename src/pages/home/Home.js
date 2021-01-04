@@ -88,14 +88,14 @@ class Home extends React.Component {
                                 title={'Veeva客户资料修改'}
                                 extra={<span className={'extra-txt red'}>已驳回 <i className={'icon-arrow'}/></span>}
                             />}
-                              description={<FlowStep stepList={stepList} current={3}/>}
+                              description={<FlowStep stepList={stepList} current={2}/>}
                         />
                         <Step title={
                             <VerticalStepTitle
                                 title={'Veeva客户资料修改'}
                                 extra={<span className={'extra-txt blue'}>已驳回 <i className={'icon-arrow'}/></span>}
                             />}
-                              description={<FlowStep stepList={stepList} current={3}/>}
+                              description={<FlowStep stepList={stepList} current={1}/>}
                         />
                     </Steps>
                 </div>

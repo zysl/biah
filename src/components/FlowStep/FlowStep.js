@@ -33,10 +33,10 @@ class FlowStep extends React.Component {
                                 <div className={'desc'}>{item.desc}</div>
                             </div>
                             <div className={'step-item-tail'}>
-                                <div className={'step-dot'} style={ idx < current ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
+                                <div className={'step-dot'} style={ idx <= current ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
                                 {
                                     (idx + 1) < stepList.length &&
-                                    <div className={'step-line'} style={ idx < current - 1 ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
+                                    <div className={'step-line'} style={ idx <= current - 1 ? {backgroundColor: '#003366'} : {backgroundColor: '#E9E9E9'}}/>
                                 }
                             </div>
                             <div className={'step-item-extra-content'}>
