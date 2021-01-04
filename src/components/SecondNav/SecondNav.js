@@ -2,12 +2,6 @@ import React, { lazy, Suspense } from 'react';
 import { connect } from 'react-redux';
 import './SecondNav.scss';
 
-import imgRefresh from '../../images/refresh.svg'
-
-const { Sider } = Layout;
-const { SubMenu } = Menu;
-const { Header } = Layout;
-
 class SecondNav extends React.Component {
     constructor(props) {
         super(props);
