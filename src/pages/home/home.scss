@@ -110,7 +110,6 @@
 		align-items: center;
 
 		&.all-chart {
-			margin-top: 30px;
 			.user-chart-list {
 				margin-right: 0;
 				display: flex;
@@ -199,6 +198,15 @@
             }
             
             .chart-item-content {
+
+                .creat {
+                    &.ant-btn-primary {
+                        background: #0575b8;
+                        border-color: #0575b8;
+                    }
+                    margin-top: 24rpx;
+                    margin-bottom: 15rpx;
+                }
                 &.common-content {
                     position: relative;
                     display: flex;

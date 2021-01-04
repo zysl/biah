@@ -1,9 +1,7 @@
 import iconExcel from '../../images/icon_excel.png';
-import down from '../../images/down.png';
 import up from '../../images/up.png';
 import iconCanlar from '../../images/icon_canlar.png';
 import pdfurl from '../../images/pdf.png';
-import selectedUrl from '../../images/checked.png';
 import React, { lazy, Suspense } from 'react';
 import { Icon,Table } from 'antd';
 import '../home/home.scss';
@@ -50,7 +48,6 @@ class Home extends React.Component {
 							</div>
 
 							<div className="common-content-nav check">
-								<img src={selectedUrl}/>
 								<span className="select_tips">分析审计记录</span>
 							</div>
 						</div>

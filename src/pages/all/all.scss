@@ -1,0 +1,33 @@
+.creat {
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.operate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .operate_search {
+        width: 200px;
+        height: 32px;
+        border: 1px solid #e2e8ed;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 8px;
+
+        .iconCanlar {
+            width: 16px;
+            height: 16px;
+        }
+
+        input {
+            border: 0;
+            outline: none;
+        }
+    }
+}

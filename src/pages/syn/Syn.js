@@ -1,7 +1,6 @@
 import iconExcel from '../../images/icon_excel.png';
 import iconCanlar from '../../images/icon_canlar.png';
 import synB from '../../images/syn_b.svg';
-import down from '../../images/down.png';
 import up from '../../images/up.png';
 
 import React, { lazy, Suspense } from 'react';

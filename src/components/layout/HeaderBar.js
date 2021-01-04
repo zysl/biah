@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { switchMenu } from '../../redux/action';
 import './header.scss';
 
-import logoURL from '../../images/logo.jpg';
 import imgRefresh from '../../images/refresh.svg'
 
 const { Sider } = Layout;
@@ -119,7 +118,6 @@ class HeaderBar extends React.Component {
         return (
             <div className="headBg">
                 <div className={'header-logo'}>
-                    {/*<img src={logoURL}/>*/}
                 </div>
                 <Menu onClick={ this.handleClick }
                       // defaultOpenKeys={ defaultOpenKeys }

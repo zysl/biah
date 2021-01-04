@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { switchMenu } from '../../redux/action';
 import './FlowStep.scss';
 
-import logoURL from '../../images/logo.jpg';
 import imgRefresh from '../../images/refresh.svg'
 
 class FlowStep extends React.Component {

@@ -1,11 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { Icon,Table } from 'antd';
 import iconExcel from '../../images/icon_excel.png';
-import down from '../../images/down.png';
 import up from '../../images/up.png';
 import iconCanlar from '../../images/icon_canlar.png';
 import pdfurl from '../../images/pdf.png';
-import selectedUrl from '../../images/checked.png';
 import '../home/home.scss';
 import './bug.scss';
 
@@ -67,7 +65,6 @@ class Home extends React.Component {
 								<span>全部语言</span>
 								<div className="input">
 								<StSelect></StSelect>
-									<img className="img_up_down" src={down}/>
 								</div>
 							</div>
 
@@ -75,7 +72,6 @@ class Home extends React.Component {
 								<span>项目名称</span>
 								<div className="input">
 								<StSelect></StSelect>
-									<img className="img_up_down" src={down}/>
 								</div>
 							</div>
 
@@ -83,7 +79,6 @@ class Home extends React.Component {
 								<span>风险等级</span>
 								<div className="input">
 								<StSelect></StSelect>
-									<img className="img_up_down" src={down}/>
 								</div>
 							</div>
 
@@ -91,7 +86,6 @@ class Home extends React.Component {
 								<span>全部漏洞类型</span>
 								<div className="input">
 									<StSelect></StSelect>
-									<img className="img_up_down" src={down}/>
 								</div>
 							</div>
 
@@ -104,7 +98,6 @@ class Home extends React.Component {
 							</div>
 
 							<div className="common-content-nav check">
-								<img src={selectedUrl}/>
 								<span className="select_tips">分析审计记录</span>
 							</div>
 						</div>

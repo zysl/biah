@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import { switchMenu } from '../../redux/action';
 import './SecondNav.scss';
 
-import logoURL from '../../images/logo.jpg';
 import imgRefresh from '../../images/refresh.svg'
 
 const { Sider } = Layout;
