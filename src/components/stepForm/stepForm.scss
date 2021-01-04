@@ -1,0 +1,176 @@
+.step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 88px;
+    height: 60px;
+    border-bottom: 1px solid #e2e8ed;
+
+    img {
+        width: 16px;
+        height: 41px;
+     }
+
+    .step_list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+            font-size: 14px;
+            font-family: MicrosoftYaHei;
+            text-align: left;
+            color: #999999;
+            line-height: 22px;
+
+            &:first-child {
+                margin-right: 8px;
+                width: 24px;
+                height: 24px;
+                background: #ffffff;
+                border-radius: 50%;
+                border: 1px solid #d9d9d9;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                em {
+                    font-style: normal;
+                    color: #999999;
+                    font-size: 14px;
+                    font-family: PingFangSC, PingFangSC-Medium;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &.checked {
+            span {
+                font-size: 14px;
+                font-family: MicrosoftYaHei;
+                text-align: left;
+                color: #333333;
+                line-height: 22px;
+    
+                &:first-child {
+                    margin-right: 8px;
+                    width: 24px;
+                    height: 24px;
+                    background: #169340;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0;
+                    em {
+                        font-style: normal;
+                        color: #ffffff;
+                        font-size: 14px;
+                        font-family: PingFangSC, PingFangSC-Medium;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.operate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #e2e6e9;
+    
+    button {
+        padding: 0 16px;
+        height: 32px;
+        background: #ffffff;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        text-align: center;
+        color: #333333;
+        outline: none;
+        cursor: pointer;
+
+        &.ok {
+            background: #0575b8;
+            border: 0;
+            font-size: 14px;
+            font-family: MicrosoftYaHei;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 8px;
+        }
+    }
+}
+
+
+.ant-row {
+    margin-top: 32px;
+
+    .ant-col {
+
+        &.ant-col-12 {
+            .label {
+                margin-left: -25px;
+            }
+
+            &.col12 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .label {
+                    margin-left: -48px;
+                }
+            }
+           
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        .no_title_input {
+            margin-left: 33px;
+        }
+    
+        span {
+            font-size: 14px;
+            font-family: MicrosoftYaHei;
+            text-align: left;
+            color: #666666;
+            line-height: 22px;
+    
+            &.label {
+                display: inline-block;
+                width: 150px;
+                height: 22px;
+                font-size: 14px;
+                font-family: MicrosoftYaHei;
+                text-align: right;
+                color: #333333;
+                line-height: 22px;
+    
+                em {
+                    margin-right: 6px;
+                    font-style: normal;
+                    color: #FF0B0B;
+                }
+            }
+        }
+    }
+}
