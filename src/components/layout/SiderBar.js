@@ -2,10 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom'
 import { Menu, Icon, Layout } from 'antd';
 import menuConfig from '../../config/menuConfig';
-<<<<<<< HEAD
-import logoURL from '../../images/logo.jpg';
-=======
->>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 import { connect } from 'react-redux';
 import { switchMenu } from '../../redux/action';
 const { Sider } = Layout;
@@ -101,10 +97,6 @@ class SiderBar extends React.Component {
     return (
       <Sider>
         <div className="logo">
-<<<<<<< HEAD
-          <img className="logo-img" src={ logoURL } alt=""/>
-=======
->>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
         </div>
         <Menu onClick={ this.handleClick } theme="light"
               defaultOpenKeys={ this.state.defaultOpenKeys }

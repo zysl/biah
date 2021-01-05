@@ -1,36 +1,4 @@
 import React, { lazy, Suspense } from 'react';
-<<<<<<< HEAD
-import { Layout, Menu, Dropdown, Icon, Breadcrumb } from 'antd';
-import { connect } from 'react-redux';
-import imgRefresh from '../../images/refresh.svg'
-import './header.scss';
-const StDiolog = lazy(() => import('../../components/diolog/diolog'));
-
-const { Header } = Layout;
-
-const HeaderBar = (props) => {
-  	return (
-		<Header>
-			<div className="headBg">
-				<StDiolog></StDiolog>
-				<div className="refresh">
-					<img className="refresh-img" src={imgRefresh}/>
-					<span className="refresh-tips">数据源每日03:00:00更新，</span>
-					<span className="refresh-tips tips-other">最近一次数据同步于2020年06月22日14:51</span>
-					<span className="refresh-tips">，如数据已发生变化需要立即更新，请点击“立即同步”</span>    
-					<button className="refresh-btn">立即同步</button>         
-				</div> 
-			</div> 
-		</Header>
-  	);
-};
-
-const mapStateToProps = (state) => {
-  return {}
-};
-
-export default connect(mapStateToProps)(HeaderBar);
-=======
 import { NavLink } from 'react-router-dom'
 import { Menu, Icon, Layout } from 'antd';
 import menuConfig from '../../config/menuConfig';
@@ -182,4 +150,3 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HeaderBar);
->>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86

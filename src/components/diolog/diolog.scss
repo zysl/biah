@@ -3,83 +3,6 @@
 }
 
 .show {
-<<<<<<< HEAD
-    display: block;
-    .mask {
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.4);
-        position: absolute;
-        z-index: 1001;
-        .diolog {
-            position: absolute;
-            width: 600px;
-            height: 280px;
-            background: #ffffff;
-            z-index: 1002;
-            top: 50%;
-            left: 50%;
-            margin-top: -140px;
-            margin-left: -300px;
-            padding:0 30px;
-
-            &.no-data {
-                height: 400px;
-            }
-            
-    
-            .diolog-title {
-                width: 100%;
-                height: 64px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                border-bottom: 1px solid #ECECEC;
-                span {
-                    font-size: 18px;
-                    color: #222222;
-                }
-    
-                img {
-                    width: 20px;
-                    height: 20px;
-                    cursor: pointer;
-                }
-            }
-    
-            .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .nodata {
-                    margin-top: 50px;
-                    width: 201px;
-                    height: 160px;
-                }
-                span {
-                    display: block;
-                    padding: 44px 62px;
-                    line-height: 20px;
-                }
-                button {
-                    margin-top: 10px;
-                    width:300px;
-                    height:40px;
-                    background:rgba(22,156,190,1);
-                    outline: none;
-                    border: 0;
-                    color: #ffffff;
-                    font-size: 15px;
-                    line-height: 40px;
-                    text-align: center;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    
-=======
     display: flex;
     flex-flow: row wrap;
     
@@ -293,6 +216,5 @@
         background-color: #0575b8;
         border-color: #0575b8;
     }
->>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 }
 
