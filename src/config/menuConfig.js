@@ -22,8 +22,8 @@ const menuConfig = [
     },
     {
         title: '模块E',
-        key: '/bug',
-        breadcrumbName: 'bug',
+        key: '/syn',
+        breadcrumbName: 'syn',
         children: [
             {
                 title: 'Option1',

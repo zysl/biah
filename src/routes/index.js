@@ -9,7 +9,6 @@ const Home = lazy(() => import('../pages/home/Home'));
 const All = lazy(() => import('../pages/all/All'));
 const Project = lazy(() => import('../pages/project/Project'));
 const Team = lazy(() => import('../pages/team/Team'));
-const Bug = lazy(() => import('../pages/bug/Bug'));
 const Syn = lazy(() => import('../pages/syn/Syn'));
 
 class Index extends React.Component {
@@ -25,7 +24,6 @@ class Index extends React.Component {
                 <Route path="/all" component={ All }/>
                 <Route path="/project" component={ Project }/>
                 <Route path="/team" component={ Team }/>
-                <Route path="/bug" component={ Bug }/>
                 <Route path="/syn" component={ Syn }/>
               </Switch>
           </HeaderBar>
@@ -36,7 +34,6 @@ class Index extends React.Component {
                 <Route path="/all" component={ All }/>
                 <Route path="/project" component={ Project }/>
                 <Route path="/team" component={ Team }/>
-                <Route path="/bug" component={ Bug }/>
                 <Route path="/syn" component={ Syn }/>
               </Switch>
             </Suspense>
