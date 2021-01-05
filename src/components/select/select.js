@@ -1,10 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { Layout, Menu, Dropdown, Icon, Select } from 'antd';
 import { connect } from 'react-redux';
-<<<<<<< HEAD
-import down from '../../images/down.png';
-=======
->>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 import up from '../../images/up.png';
 import './select.scss';
 
