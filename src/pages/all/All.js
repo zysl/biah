@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import '../home/home.scss';
+<<<<<<< HEAD
 import { Icon } from 'antd';
 
 import iconExcel from '../../images/icon_excel.png';
@@ -8,20 +9,31 @@ import up from '../../images/up.png';
 import iconCanlar from '../../images/icon_canlar.png';
 import pdfurl from '../../images/pdf.png';
 
+=======
+import '../all/all.scss';
+import searchUrl from '../../images/search.png'
+import { Icon,Button } from 'antd';
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 const TableDtb = lazy(() => import('../../components/table/table'));
 const StSelect = lazy(() => import('../../components/select/select'));
 
 
 class Home extends React.Component {
 
+<<<<<<< HEAD
 	handleClick(e) {
 		console.log(e.target.getAttribute("data-index"))
+=======
+	onPressLearnMore() {
+		console.log('aaaa')
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 	}
 
 	render() {
 		return (
 			<div className="home-warp">
 				<div className="user-chart all-chart">
+<<<<<<< HEAD
 					<div className="user-chart-list">
 						<div className="chart-item-stitle all-title">DMSCA汇总分析<span>（只统计各项目最后一次扫描结果）</span></div>
 						<div className="chart-item-content common-content">
@@ -77,10 +89,22 @@ class Home extends React.Component {
 					<div className="user-chart-list">
 						<div className="chart-item-stitle all-title">汇总分析结果<img className="all-right" src={iconExcel} /></div>
 						<div className="chart-item-content">
+=======
+					<div className="user-chart-list">	
+						<div className="chart-item-content">
+							<div className="operate">
+								<Button  type="primary" className="creat">新 建</Button>
+								<div className="operate_search">
+									<img className="iconCanlar" src={searchUrl}/>
+									<input placeholder="搜索"/>
+								</div>
+							</div>
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 							<TableDtb></TableDtb>
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
 
 				<div className="user-chart all-chart">
 					<div className="user-chart-list">
@@ -92,6 +116,9 @@ class Home extends React.Component {
 						<div className="chart-item-content"></div>
 					</div>
 				</div>
+=======
+				
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 			</div>
 		);
 	}

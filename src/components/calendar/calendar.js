@@ -1,9 +1,12 @@
 import React, { lazy, Suspense } from 'react';
 import { Table, Divider, Tag,Pagination } from 'antd';
 import { connect } from 'react-redux';
+<<<<<<< HEAD
 import imgleftUrl from '../../images/left.svg'
 import imgUpUrl from '../../images/down.png'
 import selectedUrl from '../../images/checked.png';
+=======
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 import './calendar.scss';
 
 const { Column, ColumnGroup } = Table;

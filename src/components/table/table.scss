@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .ant-table-thead > tr > th.table_blue {
     background: #74C6DB;
     height: 50px;
@@ -107,6 +108,59 @@
 
 .ant-table-tbody tr td:last-child {
     border-right: 1px solid #ddd;
+=======
+
+.ant-table-tbody td {
+    text-align: center;
+    font-size: 12px !important;
+    color: #666666;
+
+    .title {
+        
+        color: #666666 !important;
+        .anticon{
+            &.anticon-caret-down {
+                margin-left: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .red {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #ff7148;
+        border-radius: 50%;
+    }
+
+    .blue {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #169340;
+        border-radius: 50%;
+    }
+
+    .gray {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: #c8c8c8;
+        border-radius: 50%;
+    }
+
+    .h_link {
+        margin-left: 16px;
+        color: #0575B8;
+        font-size: 12px;
+    }
+}
+
+
+.ant-table-thead tr th {
+    text-align: center;
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 }
 
 .pagination {
@@ -115,6 +169,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+<<<<<<< HEAD
     span {
         font-size: 15px;
         color: #666666;
@@ -128,10 +183,14 @@
         outline: none;
         text-align: center;
     }
+=======
+    align-items: center;
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 
     .pagination_left {
         display: flex;
         flex-direction: row;
+<<<<<<< HEAD
         align-items: center;
         .next_prev {
             display: flex;
@@ -161,12 +220,25 @@
                     height: 6px;
                 }
             }
+=======
+        justify-content: flex-start;
+        align-items: center;
+
+        .btn {
+            margin-left: 16px;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            color: #0575b8;
+            line-height: 40px;
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
         }
     }
 
     .pagination_right {
         display: flex;
         flex-direction: row;
+<<<<<<< HEAD
         align-items: center;
 
         .next_prev {
@@ -276,4 +348,31 @@
             }
         }
     }
+=======
+        justify-content: space-between;
+        align-items: center;
+        .ant-pagination-item-link {
+            border: 0 !important;
+        }
+    
+        .ant-pagination-item {
+            border: 0 !important;
+            &.ant-pagination-item-active {
+                border: 1px solid #d9d9d9;
+            }
+        }
+        span {
+            font-size: 14px;
+            color: #666666;
+    
+            &.tips {
+                font-size: 12px;
+                margin-right: 10px;
+            }
+           
+        }
+    }
+
+    
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 }

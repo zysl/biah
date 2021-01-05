@@ -1,1 +1,8 @@
 node_modules
+<<<<<<< HEAD
+=======
+src/**/*.wxss
+!src/app.wxss
+.idea
+src/config.js
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86

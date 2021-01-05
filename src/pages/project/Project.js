@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import iconExcel from '../../images/icon_excel.png';
 import down from '../../images/down.png';
 import up from '../../images/up.png';
@@ -102,6 +103,24 @@ class Home extends React.Component {
 						<div className="chart-item-content"></div>
 					</div>
 				</div>
+=======
+import React, { lazy, Suspense } from 'react';
+import '../home/home.scss';
+import { Icon,Button } from 'antd';
+const StDiolog = lazy(() => import('../../components/diolog/diolog'));
+
+
+class Home extends React.Component {
+
+	onPressLearnMore() {
+		console.log('aaaa')
+	}
+
+	render() {
+		return (
+			<div className="home-warp">
+				<StDiolog></StDiolog>
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 			</div>
 		);
 	}

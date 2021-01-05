@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import iconExcel from '../../images/icon_excel.png';
 import iconCanlar from '../../images/icon_canlar.png';
 import synB from '../../images/syn_b.svg';
@@ -14,10 +15,24 @@ console.log(`selected ${value}`);
 }
 
 class Syn extends React.Component {
+=======
+import React, { lazy, Suspense } from 'react';
+import '../home/home.scss';
+import { Icon,Button } from 'antd';
+const FormBasic = lazy(() => import('../../components/form/form'));
+
+
+class Home extends React.Component {
+
+	onPressLearnMore() {
+		console.log('aaaa')
+	}
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 
 	render() {
 		return (
 			<div className="home-warp">
+<<<<<<< HEAD
 				<div className="user-chart all-chart">
 					<div className="user-chart-list">
 						<div className="chart-item-stitle all-title">同步管理</div>
@@ -76,6 +91,9 @@ class Syn extends React.Component {
 						<CalendarDtb></CalendarDtb>
 					</div>
 				</div>
+=======
+				<FormBasic></FormBasic>
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86
 			</div>
 		);
 	}
@@ -86,4 +104,8 @@ class Syn extends React.Component {
 
 }
 
+<<<<<<< HEAD
 export default Syn
+=======
+export default Home
+>>>>>>> 862198c11d7bf4186af4f4752e9ad287176aab86

@@ -1,0 +1,51 @@
+.flow-step-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .step-item {
+        position: relative;
+        flex: 1 1;
+        &:last-child {
+            flex: none;
+        }
+    }
+    .step-item-title {
+        width: 140px;
+        text-align: center;
+        .title {
+            font-size: 14px;
+            color: #333;
+        }
+        .desc {
+            font-size: 12px;
+            color: #666;
+        }
+    }
+    .step-item-extra-content {
+        width: 140px;
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+    }
+    .step-item-tail {
+        padding: 20px 0;
+        margin-left: 66px;
+        position: relative;
+        .step-dot {
+            width: 10px;
+            height: 10px;
+            background: #003366;
+            //border: 3px solid #ffffff;
+            border-radius: 50%;
+        }
+        .step-line {
+            position: absolute;
+            left: 16px;
+            right: -60px;
+            top: 24px;
+            height: 3px;
+            border-radius: 1px;
+            background: #003366;
+        }
+    }
+}
